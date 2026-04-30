@@ -6,7 +6,7 @@ CFILES = ft_printf.c ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c 
 
 OFILES = $(CFILES:%.c=%.o)
 
-NAME = libft.a
+NAME = libftprintf.a
 
 all: $(NAME)
 

@@ -1,67 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 02:26:18 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/27 20:13:24 by mnoorpra         ###   ########.fr       */
+/*   Created: 2026/04/27 18:29:00 by mnoorpra          #+#    #+#             */
+/*   Updated: 2026/04/29 17:34:18 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_countdigit(int n)
+int ft_lstsize(t_list *lst)
 {
-	long nbr;
+	t_list *tmp;
 	int count;
 
-	nbr = n;
+	tmp = lst;
 	count = 0;
-	if (nbr <= 0)
+	if (!tmp)
+		return (0);
+	while (tmp)
 	{
-		count++;
-		if (nbr < 0)
-			nbr = -nbr;
-	}
-	while (nbr > 0)
-	{
-		nbr /= 10;
+		tmp = tmp->next;
 		count++;
 	}
 	return (count);
 }
 
-char *ft_itoa(int n)
-{
-	int len;
-	char *res;
-	long nbr;
-
-	len = ft_countdigit(n);
-	res = malloc(sizeof(char) * (len + 1));
-	nbr = n;
-	if (!res)
-		return ((void *)0);
-	res[len] = '\0';
-	if (nbr == 0)
-		res[0] = '0';
-	if (nbr < 0)
-	{
-		res[0] = '-';
-		nbr = -nbr;
-	}
-	while (nbr > 0)
-	{
-		res[--len] = (nbr % 10) + '0';
-		nbr /= 10;
-	}
-	return (res);
-}
-
 // int	main(int argc, char const *argv[])
 //{
-//	printf("res : %s", ft_itoa(-2147483648));
+//	t_list	*test;
+//	int		size;
+
+//	test = ((void *) 0);
+//	size = ft_lstsize(test);
+//	printf("Empty list size : %d (Expected : 0)\n", size);
+//	while(test)
+//	{
+//		t_list *tmp = test;
+//		test = test -> next;
+//		free(tmp);
+//	}
 //	return (0);
-// }
+//}
