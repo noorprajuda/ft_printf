@@ -6,13 +6,13 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:34:16 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/23 21:10:22 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c >= 'a' && c <= 'z')
 		c -= ('a' - 'A');

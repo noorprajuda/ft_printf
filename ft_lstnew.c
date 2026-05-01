@@ -6,25 +6,25 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 17:20:36 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/29 17:52:14 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-t_list *ft_lstnew(void *content)
+t_list	*ft_lstnew(void *content)
 {
-	t_list *el;
+	t_list	*el;
 
 	el = malloc(sizeof(t_list));
 	if (!el)
-		return ((void *)0);
-	el->content = content;
-	el->next = ((void *)0);
+		return ((void *) 0);
+	el -> content = content;
+	el -> next = ((void *) 0);
 	return (el);
 }
 
-// int	main(int argc, char const *argv[])
+//int	main(int argc, char const *argv[])
 //{
 //	char	*str = "Heilbronn 42";
 //	t_list	*node;

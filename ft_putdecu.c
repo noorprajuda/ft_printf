@@ -1,33 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putdecu.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 11:20:30 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
+/*   Created: 2026/05/01 11:29:17 by mnoorpra          #+#    #+#             */
+/*   Updated: 2026/05/01 11:29:30 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putdecu(unsigned int n)
 {
-	int		i;
 	char	c;
+	int		len;
 
-	i = 0;
-	while (s[i])
-	{
-		c = s[i];
-		write(fd, &c, 1);
-		i++;
-	}
+	len = 0;
+	if (n / 10)
+		len += ft_putdecu(n / 10);
+	c = n % 10 + '0';
+	len += write(1, &c, 1);
+	return (len);
 }
-
-//int	main(int argc, char const *argv[])
-//{
-//	ft_putstr_fd("Heilbronn42" ,1);
-//	return (0);
-//}

@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mnoorpra <mnoorpra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 10:45:17 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/28 13:51:37 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-	char c;
+	char	c;
 
 	if (n == INT_MIN)
 	{
@@ -37,8 +37,8 @@ void ft_putnbr_fd(int n, int fd)
 	}
 }
 
-// int	main(int argc, char const *argv[])
+//int	main(int argc, char const *argv[])
 //{
 //	ft_putnbr_fd(-2147483648, 1);
 //	return (0);
-// }
+//}

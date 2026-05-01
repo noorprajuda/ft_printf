@@ -6,13 +6,13 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 09:31:19 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/24 09:31:22 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 	{

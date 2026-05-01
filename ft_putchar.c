@@ -1,33 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 11:20:30 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
+/*   Created: 2026/05/01 11:39:16 by mnoorpra          #+#    #+#             */
+/*   Updated: 2026/05/01 11:39:36 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void	ft_putstr_fd(char *s, int fd)
+int	ft_putchar(char c)
 {
-	int		i;
-	char	c;
-
-	i = 0;
-	while (s[i])
-	{
-		c = s[i];
-		write(fd, &c, 1);
-		i++;
-	}
+	return (write(1, &c, 1));
 }
-
-//int	main(int argc, char const *argv[])
-//{
-//	ft_putstr_fd("Heilbronn42" ,1);
-//	return (0);
-//}

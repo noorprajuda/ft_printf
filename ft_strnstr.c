@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mnoorpra <mnoorpra@student.42.fr>          +#+  +:+       +#+        */
+/*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 21:30:15 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/28 14:45:25 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char *ft_strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	size_t i;
-	size_t j;
+	size_t	i;
+	size_t	j;
 
 	if (!(*little))
 		return ((char *)big);
@@ -33,11 +33,11 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
 		}
 		i++;
 	}
-	return ((void *)0);
+	return ((void *) 0);
 }
 
-// int	main(int argc, char const *argv[])
+//int	main(int argc, char const *argv[])
 //{
 //	printf("res : %s", strnstr("abcpikachu", "", 3));
 //	return (0);
-// }
+//}

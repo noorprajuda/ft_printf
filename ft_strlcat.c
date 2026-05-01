@@ -6,18 +6,18 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 16:23:39 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/29 17:32:30 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	int i;
-	size_t ls;
-	size_t ld;
-	int s;
+	int		i;
+	size_t	ls;
+	size_t	ld;
+	int		s;
 
 	i = 0;
 	ld = ft_strlen(dst);
@@ -40,7 +40,7 @@ size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
 	return (s);
 }
 
-// int	main(int argc, char const *argv[])
+//int	main(int argc, char const *argv[])
 //{
 //	char 	dst[3] = "xyz";
 //	char	src[] = "abc";

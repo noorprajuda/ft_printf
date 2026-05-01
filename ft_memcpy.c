@@ -6,25 +6,25 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 13:33:45 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/29 18:36:41 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void *ft_memcpy(void *dst, const void *src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	size_t i;
-	char *dst_tmp;
-	char *src_tmp;
+	size_t		i;
+	char		*dst_tmp;
+	char		*src_tmp;
 
 	if (dst == (void *)0 && src == (void *)0)
 	{
 		return (dst);
 	}
 	i = 0;
-	dst_tmp = (char *)dst;
-	src_tmp = (char *)src;
+	dst_tmp = (char *) dst;
+	src_tmp = (char *) src;
 	while (i < n)
 	{
 		dst_tmp[i] = src_tmp[i];
@@ -37,7 +37,7 @@ void *ft_memcpy(void *dst, const void *src, size_t n)
 //ft_memcpy
 int main(int argc, char const *argv[])
 {
-
+	
 	int a = 1;
 	int b = 2;
 

@@ -6,22 +6,22 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 01:53:51 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/29 18:31:32 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	unsigned int i;
-	char *res;
+	unsigned int	i;
+	char			*res;
 
 	if (!s || !f)
-		return ((void *)0);
-	res = malloc(sizeof(char) * (ft_strlen(s) + 1));
+		return ((void *) 0);
+	res = malloc (sizeof(char) * (ft_strlen(s) + 1));
 	if (!res)
-		return ((void *)0);
+		return ((void *) 0);
 	i = 0;
 	while (s[i])
 	{
@@ -32,15 +32,15 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (res);
 }
 
-// char	my_test_map(unsigned int i, char c)
+//char	my_test_map(unsigned int i, char c)
 //{
 //	return (c + i);
-// }
+//}
 
-// int	main(void)
+//int	main(void)
 //{
 //	char	*str = "0000";
-//     char	*result;
+//    char	*result;
 
 //    result = ft_strmapi(str, my_test_map);
 //    if (result == NULL)

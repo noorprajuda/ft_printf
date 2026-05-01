@@ -6,17 +6,17 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 15:45:38 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/23 21:11:49 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_atoi(const char *str)
+int	ft_atoi(const char *str)
 {
-	int i;
-	int s;
-	int r;
+	int	i;
+	int	s;
+	int	r;
 
 	i = 0;
 	s = 1;

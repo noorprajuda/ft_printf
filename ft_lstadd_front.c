@@ -6,23 +6,23 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 22:41:41 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/29 17:34:39 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_lstadd_front(t_list **lst, t_list *new)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	new->next = *lst;
+	new -> next = *lst;
 	*lst = new;
 }
 
-// int	main(void)
+//int	main(void)
 //{
-//     t_list *head = NULL;
-//     t_list *node1;
-//     t_list *node2;
+//    t_list *head = NULL;
+//    t_list *node1;
+//    t_list *node2;
 
 //    node1 = ft_lstnew("I am the old front");
 //    ft_lstadd_front(&head, node1);

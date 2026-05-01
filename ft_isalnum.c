@@ -6,16 +6,16 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/23 15:48:51 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/23 21:11:27 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_isalpha(int c);
-int ft_isdigit(int c);
+int	ft_isalpha(int c);
+int	ft_isdigit(int c);
 
-int ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
 	{

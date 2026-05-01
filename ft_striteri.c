@@ -6,15 +6,15 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 01:36:21 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/27 18:28:48 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i])
@@ -24,13 +24,13 @@ void ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 }
 
-// void	make_upper_if_even(unsigned int i, char *c)
+//void	make_upper_if_even(unsigned int i, char *c)
 //{
 //	if (i % 2 == 0)
 //		*c = toupper((unsigned char)*c);
-// }
+//}
 
-// int	main()
+//int	main()
 //{
 //	char	str[] = "hello world";
 

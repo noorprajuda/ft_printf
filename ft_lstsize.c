@@ -6,16 +6,16 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 18:29:00 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/29 17:34:18 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
-	t_list *tmp;
-	int count;
+	t_list	*tmp;
+	int		count;
 
 	tmp = lst;
 	count = 0;
@@ -29,7 +29,7 @@ int ft_lstsize(t_list *lst)
 	return (count);
 }
 
-// int	main(int argc, char const *argv[])
+//int	main(int argc, char const *argv[])
 //{
 //	t_list	*test;
 //	int		size;

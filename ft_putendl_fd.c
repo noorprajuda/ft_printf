@@ -6,16 +6,16 @@
 /*   By: mnoorpra <mnoorpra@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 11:26:23 by mnoorpra          #+#    #+#             */
-/*   Updated: 2026/04/24 11:30:04 by mnoorpra         ###   ########.fr       */
+/*   Updated: 2026/05/01 10:21:21 by mnoorpra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-void ft_putendl_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-	int i;
-	char c;
+	int		i;
+	char	c;
 
 	i = 0;
 	while (s[i])
@@ -28,8 +28,8 @@ void ft_putendl_fd(char *s, int fd)
 	write(fd, &c, 1);
 }
 
-// int	main(int argc, char const *argv[])
+//int	main(int argc, char const *argv[])
 //{
 //	ft_putendl_fd("Heilbronn42", 1);
 //	return (0);
-// }
+//}
